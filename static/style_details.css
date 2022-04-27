@@ -1,0 +1,30 @@
+
+header{background:white;
+       padding:10px 0;
+       text-align:center;}
+
+h1{text-align:center;
+   background:skyblue;}
+   
+h2{text-align:center;}
+
+img{text-align:center;}
+
+body{background:#f5cac2;}
+
+h2{color:red;}
+
+ul li{display:inline-block;
+      width:200;
+      text-align:center;
+      background:skyblue;}
+
+ul li a{color:#ffffff;}
+
+footer{background:skyblue;
+        padding:10px 0;
+        text-align:center;
+        color:#ffffff; }
+ 
+
+   ​ 

@@ -1,0 +1,24 @@
+
+{% extends "theme_details.html" %}
+{% block content %}
+          <form action="{{url_for('update')}}" method="POST">
+             <input type="hidden" name="uid" value="{{singleuser[0]}}"/><br><br>
+             
+                            <label>Athletes</label>
+             <input type="text" name="athletes" value="{{singleuser[1]}}"/><br><br>
+                            <label>Grade</label>
+             <input type="text" name="grade" value="{{singleuser[2]}}"/><br><br>
+                            <label>Salary</label>
+             <input type="text" name="salary" value="{{singleuser[3]}}"/><br><br>
+                            <label>Contact</label>
+             <input type="number" name="contact" value="{{singleuser[4]}}"/><br><br>
+                            <label>Email</label>
+             <input type="text" name="email" value="{{singleuser[5]}}"/><br><br>
+                            <label>Password</label>
+             <input type="password" name="password" value="{{singleuser[6]}}"/><br><br>
+                            <label>Birth Date</label>
+             <input type="text" name="birthdate" value="{{singleuser[7]}}"/><br><br>
+             
+             <input type="submit" name="updateathletes" value="UPDATE"/><br><br>
+          </form>
+{% endblock %}          

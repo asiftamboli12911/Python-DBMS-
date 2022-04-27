@@ -1,0 +1,14 @@
+
+{% extends "theme_details.html" %}
+{% block content %}
+        <h3>Login Here</h3>
+        <form action="{{url_for('check')}}" method="POST">
+                      <label>Athletes</label>
+            <input type="text" name="athletes"/><br><br>
+                      <label>Password</label>
+            <input type="password" name="password"/><br><br>
+            <input type="submit" name="login" value="Login"/><br><br>
+        </form>
+    
+{% endblock %}
+

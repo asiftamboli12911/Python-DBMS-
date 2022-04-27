@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+     <head>
+     
+          <title>Home page</title>
+          
+          <link href="../static/style_details.css" rel="stylesheet"/>
+    
+     </head>
+     
+     <body>
+     
+          <ul>
+               <li><a href="{{url_for('hello_world')}}">Home</a></li>
+               <li><a href="{{url_for('about')}}">About</a></li>
+            
+            {% if 'athletes' not in session %}
+                <li><a href="{{url_for('login')}}">Login</a></li>
+            {% else %}
+            <li><a href="{{url_for('players')}}">Players</a></li>
+            <li>Hello {{session['athletes']}}, <a href="{{url_for('logout')}}">Logout</a></li>
+            {% endif %}
+
+          </ul>
+          {% block content %}
+          
+          {% endblock %}
+          
+          <footer>
+                 <img src="../static/star.jpeg"/><br><br>
+                  BROADCASTING PARTNER
+          
+                <P>Copyright &copy BCCI; 2021 all rights reserved.</p>
+          </footer>
+         
+     </body>
+     
+</html>
